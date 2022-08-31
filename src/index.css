@@ -1,0 +1,507 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'DynaPuff', cursive;
+
+  font-family: 'Montserrat', sans-serif;
+}
+img{
+  width: 70%;
+}
+
+ul{
+  list-style: none;
+  
+}
+.flex-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -----home----- */
+.home{
+  width:100% ;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #43cea2; 
+  background: -webkit-linear-gradient(to right, #185a9d, #43cea2); 
+  background: linear-gradient(to right, #185a9d, #43cea2); 
+  
+}
+.home-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 600px;
+  position: absolute;
+  top: 400px;
+}
+.home h1{
+  font-size: 50px;
+  margin:2px solid blue;
+  position: relative;
+  top: 50px;
+}
+.home p{
+  position: absolute;
+  top: 359px;
+}
+.home input {
+  width: 300px;
+  height: 40px;
+  border: 1px solid black;
+  border: 0;
+  border-radius: 10px;
+  color: rgb(0, 183, 255);
+  font-size: 30px;
+  text-align: center;
+  transition: transform 0.06s ease;
+  outline: none
+}
+.home input:hover{
+  transform: scale(1.05);
+  background-color: rgb(211, 205, 205);
+  border: 0;
+}
+.home-form i{
+  font-size: 36px;
+  padding: 20px 0 0 0;
+  animation: movimiento 0.9s linear infinite;
+}
+.home-form button{
+  border: 12px solid black;
+  width: 90px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: red;
+  font-size:16px ;
+  margin: 20px;
+  cursor: pointer;
+  transition: transform 0.06s ease;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.form-btn{
+  width: 40px;
+  border: 10px solid black;
+  aspect-ratio: 1;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.home-form button:hover{
+  transform: scale(1.09);
+
+}
+.banner_img{
+  animation: movimiento 1.5s linear infinite;
+}
+.banner_img img {
+  width: 500px;
+  padding: 60px 0 0 0;
+}
+@keyframes movimiento{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(10%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+/* -----card----- */
+
+.card-container{
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0 50px 0;
+}
+.card{
+  width: 220px;
+  height: 330px;
+  padding: 7.5px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+.card:hover{
+  transform: scale(1.05);
+}
+.card-header{
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  height: 90px;
+}
+.card-header img {
+  position: relative;
+  left: 40px;
+  top: -13px;
+  animation: movimiento 1.5s linear infinite;
+
+}
+/* -----Secciion----- */
+.card-seccion{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  height: 100px;
+  background-color: white;
+}
+
+.card-seccion ul{
+  display: flex;
+  gap: 20px;
+  color: gray;
+}
+.card-seccion li{
+  border-radius: 10px;
+  color: grey;
+  font-size: 15.5px;
+}
+.card-seccion p{
+  color: rgb(43, 42, 42);
+  font-size: 14px;
+  padding: 0;
+}
+/* -----Footer----- */
+.card-footer{
+  height:126px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+  background-color: rgb(255, 255, 255);
+}
+.card-footer-stars{
+  width: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+.card-footer-stars h4 {
+  font-size: 12px;
+  color: grey;
+  text-align: center;
+}
+.card-footer-stars p{
+  font-size: 18px;
+  text-align: center;
+  color: #00b09b;
+}
+.bg-fire{
+  background: #ee0979;  
+  background: -webkit-linear-gradient(to top, #ff6a00, #ee0979);
+  background: linear-gradient(to top, #ff6a00, #ee0979); 
+}
+.bg-water{
+  background: #9CECFB; 
+  background: -webkit-linear-gradient(to top, #0052D4, #65C7F7, #9CECFB); 
+  background: linear-gradient(to top, #0052D4, #65C7F7, #9CECFB); 
+  
+}
+.bg-fighting{
+  background: #ff0084; 
+  background: -webkit-linear-gradient(to top, #33001b, #ff0084); 
+  background: linear-gradient(to top, #33001b, #ff0084); 
+  
+}
+.bg-flying{
+  background: #00C9FF; 
+  background: -webkit-linear-gradient(to top, #92FE9D, #00C9FF); 
+  background: linear-gradient(to top, #92FE9D, #00C9FF);
+  
+}
+.bg-grass{
+  background: #00b09b;  
+  background: -webkit-linear-gradient(to top, #96c93d, #00b09b); 
+  background: linear-gradient(to top, #96c93d, #00b09b);
+}
+.bg-normal{
+  background: #cc2b5e; 
+  background: -webkit-linear-gradient(to top, #753a88, #cc2b5e); 
+  background: linear-gradient(to top, #753a88, #cc2b5e);
+  
+}
+.bg-ground{
+  background: #FDC830; 
+  background: -webkit-linear-gradient(to top, #F37335, #FDC830); 
+  background: linear-gradient(to top, #F37335, #FDC830);
+  
+}
+.bg-rock{
+  background: #000000; 
+  background: -webkit-linear-gradient(to left, #434343, #000000);
+  background: linear-gradient(to left, #434343, #000000);
+  
+}
+.bg-poison{
+  background: #a80077;
+  background: -webkit-linear-gradient(to right, #66ff00, #a80077); 
+  background: linear-gradient(to right, #66ff00, #a80077); 
+  
+}
+.bg-bug{
+  background: #40E0D0;  
+  background: -webkit-linear-gradient(to top, #FF0080, #FF8C00, #40E0D0);  
+  background: linear-gradient(to top, #FF0080, #FF8C00, #40E0D0);
+}
+.bg-ghost{
+  background: #03001e;  
+  background: -webkit-linear-gradient(to top, #fdeff9, #ec38bc, #7303c0, #03001e);
+  background: linear-gradient(to top, #fdeff9, #ec38bc, #7303c0, #03001e); 
+  
+}
+.bg-steel{
+  background: #03001e;  
+  background: -webkit-linear-gradient(to top, #fdeff9, #ec38bc, #7303c0, #03001e); 
+  background: linear-gradient(to top, #fdeff9, #ec38bc, #7303c0, #03001e); 
+  
+}
+.bg-electric{
+  background: #f7ff00; 
+  background: -webkit-linear-gradient(to top, #db36a4, #f7ff00); 
+  background: linear-gradient(to top, #db36a4, #f7ff00); 
+  
+}
+.bg-psychic{
+  background: #59C173;  
+  background: -webkit-linear-gradient(to bottom, #5D26C1, #a17fe0, #59C173); 
+  background: linear-gradient(to bottom, #5D26C1, #a17fe0, #59C173); 
+  
+}
+.bg-ice{
+  background: #2980B9;  
+  background: -webkit-linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);
+  background: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9); 
+   
+}
+.bg-dragon{
+  background: #c31432; 
+  background: -webkit-linear-gradient(to top, #240b36, #c31432);
+  background: linear-gradient(to top, #240b36, #c31432); 
+  
+}
+.bg-dark{
+  background: #000000; 
+  background: -webkit-linear-gradient(to top, #434343, #000000);
+  background: linear-gradient(to top, #434343, #000000);
+  
+}
+.bg-shadow{
+  background: #BBD2C5; 
+  background: -webkit-linear-gradient(to top, #292E49, #536976, #BBD2C5); 
+  background: linear-gradient(to top, #292E49, #536976, #BBD2C5); 
+  
+}
+.bg-fairy{
+  background: #833ab4;  
+  background: -webkit-linear-gradient(to top, #fcb045, #fd1d1d, #833ab4); 
+  background: linear-gradient(to top, #fcb045, #fd1d1d, #833ab4);
+  
+}
+.bg-unknown{
+  background: #44A08D;  
+  background: -webkit-linear-gradient(to top, #093637, #44A08D); 
+  background: linear-gradient(to top, #093637, #44A08D);
+  
+}
+/*----- Pokeheader----- */
+.poke-Header{
+  width: 100%;
+  height: 150px;
+}
+.poke-header-red{
+  height: 90px;
+  background-color: red;
+  
+
+}
+.poke-Header img{
+  width: 250px;
+  position: absolute;
+  top: 20px;
+  left: 60px;
+}
+
+.poke-header-black{
+  height: 40px;
+  background-color: black;
+
+}
+.poke-header-circulo{
+  width: 100px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 13px solid black;
+  display: flex;
+  flex-wrap:wrap ;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position:absolute;
+  top: 56px;
+  right: 150px;
+}
+.poke-header-circulo div{
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 13px solid black;
+  background-color: rgb(126, 123, 123);
+}
+.pokedex-welcome{
+  padding: 0 0 30px 32px;
+}
+.pokedex-welcome span{
+  color: red;
+  font-size: 30px;
+}
+
+.Search-form{
+  display: flex;
+  justify-content:center;
+}
+.Search-form input{
+  width: 250px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 10px 0 0 10px;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  text-align: start;
+  font-size: 25px;
+
+  padding: 0 0 0 30px;
+  transition: transform 0.06s ease;
+  outline: none
+}
+.Search-form input:hover{
+  transform: scale(1.0);
+  background-color: rgb(211, 205, 205);
+  border: 0;
+  font-size: 25px;
+}
+.Search-form button {
+  width: 80px;
+  height: 40px;
+  border: 0px ;
+  border-radius:0 10px 10px 0 ;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.06s ease;
+}
+.Search-form button:hover{
+  transform: scale(1.05);
+}
+.select-type{
+  width: 200px;
+  height: 45px;
+  border: 1px solid red;
+  background-color: red;
+  border-radius: 10px;
+  position: absolute;
+  left: 550px;
+  top: 147px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  cursor:pointer;
+  transition: transform 0.06s ease;
+}
+.select-type:hover{
+  transform: scale(1.05);
+}
+/*----- PokeInfo ----- */
+.poke-info{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  gap: 70px;
+}
+.poke-header{
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+.poke-header img{
+  position: absolute;
+  width: 200px;
+  top: -10px;
+  animation: movimiento 1.5s linear infinite;
+
+}
+.poke-header h1{
+  font-size: 60px;
+  text-transform: uppercase;
+  padding: 50px 0 0 0;
+}
+.poke-header ul{
+  display: flex;
+  gap: 50px;
+  padding: 0 0 30px 0;
+}
+.poke-header li{
+  font-size: 30px;
+  color: gray;
+}
+.poke-info-footer{
+  width: 500px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.poke-info-footer div{
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50px;
+}
+.poke-info-footer h4{
+  font-size: 15px;
+  color: gray;
+}
+.poke-info-footer p{
+  font-size:25px ;
+}
+.return-home{
+  width: 50px;
+  aspect-ratio: 1;
+  position: fixed;
+  left: 40px;
+  top: 40px;
+}
+.return-home i {
+  font-size: 60px;
+  color: #000000;
+  transition: transform 0.06s ease;
+}
+.return-home i:hover{
+  transform: scale(1.09);
+}
